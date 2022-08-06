@@ -1,0 +1,47 @@
+<meta charset=UTF-8>
+
+<script>
+    function pulaLinha(){
+        document.write("<br>");
+
+    }
+
+    function mostra(frase){
+        document.write(frase);
+        pulaLinha();
+
+    }
+
+
+    alert("Olá, Para iniciarmos irei te fazer algumas perguntas");
+    var area = prompt("Me informa para qual área você deseja seguir: Digite 1 para Front-End ou 2 para Back-End?");
+
+    if(area == 1){
+        var front = prompt("Bacana, nessa área você quer se aprofundar em: 1 para React ou 2 para Vue?");
+    }else{
+        var back = prompt("Bacana, nessa área você quer se aprofundar em: 1 para C# ou 2 para Java?");
+    }
+
+    var aprofundar = prompt("Tenho certeza que logo logo você estará fera! Para sua trilha você vai preferir: 1 para se especializar na área ou 2 para seguir se desenvolvendo para se tornar Fullstack?");
+
+    if(aprofundar == 1){
+        alert("Que massa, logo mais você será referência nesse assunto!");
+    }else{
+        alert("Se tornar Fullstack tem vários desafios, mas também é muito gratificante.");
+    }
+
+    alert("Quero saber agora quais serão as tecnologias que você gostaria de se especializar ou conhecer.");
+    var tecnologias = [prompt("Informe a tecnologia.")];
+    var continua = prompt("Tem mais alguma tecnologia que você gostaria de aprender? Digite 1 para SIM ou 2 para NÂO");
+                
+    while(continua == 1){
+        var tecnologias = [prompt("Informe a tecnologia.")];
+        var continua = prompt("Tem mais alguma tecnologia que você gostaria de aprender? Digite 1 para SIM ou 2 para NÂO");
+    }
+
+    
+    mostra("FIM!")
+
+
+
+</script>
