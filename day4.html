@@ -1,0 +1,33 @@
+<meta charset=UTF-8>
+
+<script>
+    function pulaLinha(){
+    document.write("<br><br>");
+}
+
+function mostra(frase){
+    document.write(frase);
+    pulaLinha();
+}
+
+var numeroSorteado = Math.round(Math.random() * 10 );
+var tentativas = 1;
+console.log(numeroSorteado);
+
+while(tentativas <= 3){
+    var chute = parseInt(prompt("Informe seu chute de 0 a 10."));
+
+    if(chute == numeroSorteado){
+        mostra("Parabéns! Você acertou. O número sorteado era: " + numeroSorteado);
+        break;
+    }else{
+        mostra("Você errou!")
+    }
+    tentativas++;
+}
+
+mostra("Fim do jogo.")
+
+
+
+</script>
